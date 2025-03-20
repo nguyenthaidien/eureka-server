@@ -1,0 +1,15 @@
+*.log
+logs\application-debug.log
+/logs
+/logs
+/logs
+logs/application-debug.log
+/logs
+logs/application-debug.log
+logs/application-debug.log
+target/classes/com/example/demo/DemoApplication.class
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+target/test-classes/com/example/demo/DemoApplicationTests.class
+logs/application-debug.log
+*.log
