@@ -9,7 +9,12 @@ jobs:
   example-job:
     runs-on: self-hosted
     steps:
-      - name: Install Dependencies
-        run: |
-          mkdir -p my-new-directory
-          echo "Directory 'my-new-directory' created successfully!"
+      - uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Build with Maven
+        run: mvn package -DskipTests=true
