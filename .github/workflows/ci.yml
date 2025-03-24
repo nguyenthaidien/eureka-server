@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Install Dependencies
         run: |
-          echo "Installing dependencies..."
-          mkdir /opt/actions-runner/workings/diennt
+          mkdir -p my-new-directory
+          echo "Directory 'my-new-directory' created successfully!"
