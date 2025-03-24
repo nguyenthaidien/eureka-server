@@ -13,6 +13,7 @@ LABEL Description="Eureka Server" Version="0.0.1"
 # the version of the archive
 ARG VERSION=0.0.1
 
+
 # mount the temp volume
 
 VOLUME /tmp

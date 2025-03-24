@@ -9,10 +9,7 @@ jobs:
   example-job:
     runs-on: self-hosted
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
       - name: Install Dependencies
         run: |
           echo "Installing dependencies..."
-          mvn package -DskipTests=true
+          mkdir /opt/actions-runner/workings/diennt
