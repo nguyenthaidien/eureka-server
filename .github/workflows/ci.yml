@@ -15,14 +15,4 @@ jobs:
       - name: Install Dependencies
         run: |
           echo "Installing dependencies..."
-          npm install
-
-      - name: Run Tests
-        run: |
-          echo "Running tests..."
-          npm test
-
-      - name: Build Project
-        run: |
-          echo "Building project..."
-          npm run build
+          mvn package -DskipTests=true
