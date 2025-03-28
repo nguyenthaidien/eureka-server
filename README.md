@@ -1,5 +1,3 @@
-# backend
-
 
 
 ## Getting started
@@ -33,6 +31,12 @@ git push -uf origin main
 - [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
 ## Test and Deploy
+Dockerfile --> Build image...
+- Tag images nguyenthaidien/eurekaserver:latest
+
+docker tag eurekaserver:latest nguyenthaidien/eurekaserver:latest
+docker push nguyenthaidien/eurekaserver:latest
+
 
 Use the built-in continuous integration in GitLab.
 
