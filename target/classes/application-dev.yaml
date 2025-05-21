@@ -1,0 +1,27 @@
+
+server:
+  port: 8761
+#
+eureka:
+  instance:
+    hostname: eureka-server
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+        defaultZone: http://eureka-server:8761/eureka/
+#
+logging:
+    level:
+      org:
+        springframework:
+          security:
+            web: WARN
+          hibernate: ERROR
+    file:
+      name: logs/application-debug.log
+      max-size: 1MB
+    pattern:
+      console: "%d %-5level %logger : %msg%n"
+      file: "%d %-5level [%thread] %logger : %msg%n"
