@@ -14,6 +14,12 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #
+logstash:
+  logging:
+    enabled: true
+    url: 10.82.14.80:5044  # Replace with your Logstash host and port
+
+# Logging configuration
 logging:
     level:
       org:
