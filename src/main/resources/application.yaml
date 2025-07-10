@@ -14,10 +14,10 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #
-logstash:
-  logging:
-    enabled: true
-    url: 10.82.14.80:5044  # Replace with your Logstash host and port
+# logstash:
+#   logging:
+#     enabled: true
+#     url: 10.82.14.80:5044  # Replace with your Logstash host and port
 
 # Logging configuration
 logging:
@@ -28,7 +28,7 @@ logging:
             web: WARN
           hibernate: ERROR
     file:
-      name: logs/application-debug.log
+      name: /var/log/eureka/eureka.log
       max-size: 1MB
     pattern:
       console: "%d %-5level %logger : %msg%n"

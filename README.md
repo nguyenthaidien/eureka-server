@@ -1,5 +1,9 @@
 
 
+mvn package
+mvn spring-boot:run
+
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
