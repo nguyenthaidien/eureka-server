@@ -4,6 +4,16 @@ server:
 spring:
   application:
     name: eureka-server
+  config:
+      import: optional:configserver:http://10.82.14.80:8888
+
+
+# Add a spring.config.import=configserver: property to your configuration.
+#         If configuration is not required add spring.config.import=optional:configserver: instead.
+#         To disable this check, set spring.cloud.config.enabled=false or
+#         spring.cloud.config.import-check.enabled=false.
+
+
 #
 eureka:
   instance:
@@ -13,11 +23,6 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-#
-# logstash:
-#   logging:
-#     enabled: true
-#     url: 10.82.14.80:5044  # Replace with your Logstash host and port
 
 # Logging configuration
 logging:
