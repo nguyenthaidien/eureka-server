@@ -24,17 +24,3 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-# Logging configuration
-# logging:
-#     level:
-#       org:
-#         springframework:
-#           security:
-#             web: WARN
-#           hibernate: ERROR
-#     file:
-#       name: /var/log/eureka/eureka.log
-#       max-size: 1MB
-#     pattern:
-#       console: "%d %-5level %logger : %msg%n"
-#       file: "%d %-5level [%thread] %logger : %msg%n"
