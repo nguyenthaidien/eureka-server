@@ -4,6 +4,19 @@ server:
 spring:
   application:
     name: eureka-server
+<<<<<<< HEAD
+=======
+  config:
+      import: optional:configserver:http://10.82.14.80:8888
+
+
+# Add a spring.config.import=configserver: property to your configuration.
+#         If configuration is not required add spring.config.import=optional:configserver: instead.
+#         To disable this check, set spring.cloud.config.enabled=false or
+#         spring.cloud.config.import-check.enabled=false.
+
+
+>>>>>>> f257ce0e1eb365f41c7c0a23b770b8d3c2b6a2b4
 #
 eureka:
   instance:
@@ -13,6 +26,7 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+<<<<<<< HEAD
 #
 logging:
     level:
@@ -27,3 +41,6 @@ logging:
     pattern:
       console: "%d %-5level %logger : %msg%n"
       file: "%d %-5level [%thread] %logger : %msg%n"
+=======
+
+>>>>>>> f257ce0e1eb365f41c7c0a23b770b8d3c2b6a2b4
